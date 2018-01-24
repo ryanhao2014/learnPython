@@ -1,6 +1,6 @@
 ### practice杨辉三角 generator实现及遇到的问题
 #### 实现1
-`
+#`
 def triangles():
     b=[1]
     while True:
@@ -15,14 +15,14 @@ for t in triangles():
     s1.append(t)
     n1=n1+1
     if n1==3:
-        break`
+        break#`
         
         
         
         
         
 #### 实现2        
-`
+#`
 def triangles2():
     b=[1]
     while True:
@@ -35,12 +35,12 @@ for t2 in triangles2():
     s2.append(t2)
     n2=n2+1
     if n2==3:
-        break`
+        break#`
      
-    发现s1 s2并不相同
-    作对比为：
-    `
-    n1=0
+    #发现s1 s2并不相同
+    #作对比为：
+   # `
+n1=0
 s1=[]
 for t in triangles():
     print(t,type(t),'      s1= ',s1)
@@ -67,9 +67,10 @@ if a==c:
         print('s1==s2')
     else:
             print('what??????')
-            `
-            运行结果为
- >           
+           # `
+            #运行结果为
+'''
+>           
 [1] <class 'list'>       s1=  []
 [[1]]
 [1, 1] <class 'list'>       s1=  [[1, 1]]
@@ -88,3 +89,4 @@ what??????
 
 即s1在调用append()之后出现了与s2不同的结果
 尚未发现其原因
+'''
